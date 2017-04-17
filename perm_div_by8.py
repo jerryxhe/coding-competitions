@@ -1,11 +1,12 @@
 # https://www.hackerrank.com/challenges/manasa-loves-maths
-from itertools import permutations
-n = int(raw_input())
-
 def gdigits(int_):
+    """ not used function"""
     while int_!=0:
         yield int_%10
         int_ /=10
+
+from itertools import permutations
+n = int(raw_input())
 
 for _ in xrange(n):
     num_ = raw_input()
