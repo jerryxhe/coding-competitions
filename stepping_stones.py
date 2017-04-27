@@ -9,4 +9,4 @@ for _ in xrange(T):
     if k*(k+1) != n:
         print "Better Luck Next Time"
     else:
-        print "Go On Bob "+str(k)
+        print "Go On Bob "+str(k+1)
