@@ -9,9 +9,10 @@ for _ in xrange(n):
     d_rep = [(ord(let)-97) for let in word]
     n_ = len(word)
     max_ = [None]*n_
-    for i in xrange(n_):
+    for i in xrange(n_-1, -1, -1):
         max_[i] = filter(lambda j: j[1] > d_rep[i], enumerate(d_rep[i+1:]))
-    i=n_-1
+        if len(max_[i])>0:
+            break;
     while len(max_[i])==0 and i>=0:
         i-=1
     if i<0:
